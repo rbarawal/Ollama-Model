@@ -9,8 +9,7 @@ curl -fsSL https://ollama.com/install.sh | sh
 ollama serve
 
 # 2nd termux session
-ollama create mario -f ./Modelfile
-ollama run mario
+ollama run llama3.2:1b
 ```
 
 ## Termux

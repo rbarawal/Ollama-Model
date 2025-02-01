@@ -120,13 +120,10 @@ class SitemapCrawler:
     async def _save_to_markdown(self, content: ExtractedContent):
         """Save extracted content as a Markdown file."""
         # Format Markdown file
-        metadata_lines = "\n".join(f"- *{key}:* {value}" for key, value in content.metadata.items())
         markdown = (
             f"# URL: {content.url}\n\n"
             f"## Title\n\n"
             f"{content.metadata.get('title', 'No title available')}\n\n"
-            f"## Metadata\n\n"
-            f"{metadata_lines}\n\n"
             f"## Text Content\n\n"
             f"{content.text_content}\n"
         )

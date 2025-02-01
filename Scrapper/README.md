@@ -7,10 +7,11 @@ curl -fsSL https://ollama.com/install.sh | sh
 ollama serve
 
 # 2nd termux session
+python app.py
 python generate.py
 
 ollama create blogforge -f ./Modelfile
-ollama run blogforge
+OLLAMA_USE_CUDA=1 ollama run blogforge
 ```
 
 ## Sample commands:

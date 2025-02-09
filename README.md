@@ -1,4 +1,8 @@
-# `Ollama Model`
+># `Ollama Model`
+>
+>      Yes, Ollama works offline with custom model for your website sitemap.xml
+>
+>![image](https://github.com/user-attachments/assets/c57eb4d4-6a60-46f8-82a6-847990ab0988)
 
 ## Linux
 
